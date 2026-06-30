@@ -1,0 +1,12 @@
+# ビルド成果物（Vercelが build.cjs で生成するためコミット不要）
+dist/
+
+# 依存・環境
+node_modules/
+.vercel
+.env
+.env.local
+
+# OS / エディタ
+.DS_Store
+Thumbs.db

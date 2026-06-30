@@ -1,0 +1,9 @@
+{
+  "name": "suita-pet-salon-navi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "吹田市ペットサロン比較ナビ（AIO最適化・静的サイト）",
+  "scripts": {
+    "build": "node build.cjs"
+  }
+}
