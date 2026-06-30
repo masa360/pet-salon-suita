@@ -18,7 +18,7 @@ const path = require('path');
 
 const DIR = __dirname;
 const DIST = path.join(DIR, 'dist');
-const SITE_URL = (process.env.SITE_URL || 'https://suita-pet-salon.vercel.app').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://pet-salon-suita.vercel.app').replace(/\/$/, '');
 
 const SALONS_DATA = require('./salons-data.js');
 const R = require('./salons-render.js');
