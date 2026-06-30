@@ -180,6 +180,9 @@
   .line-box h3 { font-size: 17px; margin-bottom: 6px; }
   .line-box p { font-size: 13px; opacity: 0.95; margin-bottom: 16px; }
   .line-box a { background: #fff; color: #06b34c; font-weight: 800; font-size: 15px; padding: 12px 24px; border-radius: 50px; text-decoration: none; display: inline-block; }
+  .line-qr { margin-top: 16px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .line-qr img { background: #fff; padding: 8px; border-radius: 8px; display: block; }
+  .line-qr-cap { font-size: 11.5px; opacity: 0.9; }
   .form-fields label { font-size: 12.5px; color: #555; font-weight: 600; display: block; margin: 0 0 4px; }
   .form-fields input, .form-fields textarea, .form-fields select { width: 100%; padding: 9px 12px; border: 1.5px solid #ccc; border-radius: 6px; font-size: 14px; margin-bottom: 12px; font-family: inherit; outline: none; }
   .form-fields input:focus, .form-fields textarea:focus, .form-fields select:focus { border-color: #7e57c2; }
@@ -308,6 +311,10 @@
           <h3>LINEで相談する</h3>
           <p>友だち追加して、トークでお気軽に。<br>最短その日にご返信します。</p>
           <a href="#" id="line-link" target="_blank" rel="noopener">＋ 友だち追加して相談</a>
+          <div class="line-qr">
+            <img src="https://qr-official.line.me/gs/M_250dqewp_GW.png?oat_content=qr" alt="LINE友だち追加QRコード" width="120" height="120" loading="lazy">
+            <span class="line-qr-cap">スマホで読み取って追加</span>
+          </div>
         </div>
       </div>
       <div class="contact-col">
@@ -449,7 +456,7 @@ const salons = SENRIYAMA_NAMES.map((nm, i) => {
   return Object.assign({}, base, { no: i + 1 });
 }).filter(Boolean);
 
-const LINE_URL = "https://line.me/R/ti/p/@YOUR_LINE_ID";
+const LINE_URL = "https://lin.ee/OFP3Mj7";
 const FORM_ENDPOINT = "";
 
 let currentFilter = 'all';

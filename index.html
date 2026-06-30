@@ -482,6 +482,9 @@
     text-decoration: none;
     display: inline-block;
   }
+  .line-qr { margin-top: 16px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .line-qr img { background: #fff; padding: 8px; border-radius: 8px; display: block; }
+  .line-qr-cap { font-size: 11.5px; opacity: 0.9; }
   .form-fields label { font-size: 12.5px; color: #555; font-weight: 600; display: block; margin: 0 0 4px; }
   .form-fields input, .form-fields textarea, .form-fields select {
     width: 100%;
@@ -658,6 +661,10 @@
           <h3>LINEで相談する</h3>
           <p>友だち追加して、トークでお気軽に。<br>最短その日にご返信します。</p>
           <a href="#" id="line-link" target="_blank" rel="noopener">＋ 友だち追加して相談</a>
+          <div class="line-qr">
+            <img src="https://qr-official.line.me/gs/M_250dqewp_GW.png?oat_content=qr" alt="LINE友だち追加QRコード" width="120" height="120" loading="lazy">
+            <span class="line-qr-cap">スマホで読み取って追加</span>
+          </div>
         </div>
       </div>
       <div class="contact-col">
@@ -779,8 +786,8 @@
 // 吹田市版は no:44「アリバ豊中動物病院」（豊中市・千里山特集専用）のみ除外し、他は全て表示
 const salons = SALONS_DATA.filter(s => s.no !== 44);
 
-// ▼ ここを自分のLINE公式アカウントのURLに差し替えてください
-const LINE_URL = "https://line.me/R/ti/p/@YOUR_LINE_ID";
+// ▼ LINE公式アカウントの友だち追加URL
+const LINE_URL = "https://lin.ee/OFP3Mj7";
 // ▼ フォーム送信先（Formspree / GoogleフォームのURL等）に差し替えてください
 const FORM_ENDPOINT = "";
 
