@@ -216,7 +216,11 @@
   @media (max-width: 600px) {
     .hero h1 { font-size: 20px; }
     .grid { grid-template-columns: 1fr; }
+    .header-top { padding: 12px 16px; flex-wrap: nowrap; gap: 10px; }
+    .logo { font-size: 17px; white-space: nowrap; }
+    .header-nav { flex-shrink: 0; }
     .header-nav a:not(.cta-nav) { display: none; }
+    .header-nav a.cta-nav { margin-left: 0; padding: 7px 12px; font-size: 12px; white-space: nowrap; }
     .contact-grid { grid-template-columns: 1fr; }
   }
 </style>
